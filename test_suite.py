@@ -17,30 +17,10 @@ mcp = Adafruit_MCP3008.MCP3008(spi=SPI.SpiDev(SPI_PORT, SPI_DEVICE))
 # appropriate threshold levels and set them 
 # accordingly. Then, use them to determine
 # when it is light or dark, quiet or loud.
-lux_treshold=0  # change this value
-sound_treshold=0 # change this value
+lux_treshold=200  # change this value
+sound_treshold=200 # change this value
 
-"""
-Your task is to write a testing routine that continuously performs
-the sequence of actions listed below in an infinite loop.
 
-  1. Blink the LED 5 times with on/off intervals of 500ms.
-
-  2. For about 5 seconds, read the output of the Grove light sensor 
-      with intervals of 100 ms and print the raw value
-      along with the text “bright” or “dark” (you will have to determine 
-      a threshold for this through experimentation).
-
-  3. Blink the LED 4 times with on/off intervals of 200ms.
-
-  4. For about 5 seconds, read the output of the Grove sound sensor 
-      with intervals of 100 ms and print the raw value. If the sound 
-      sensor is tapped (i.e. the sound magnitude goes above the 
-      threshold you decide from experimentation), the LED should turn on 
-      for 100 ms.
-"""
-
-#Following commands control the state of the output
   #GPIO.output(pin, GPIO.HIGH)
   #GPIO.output(pin, GPIO.LOW)
 
